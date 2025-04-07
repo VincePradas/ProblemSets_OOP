@@ -25,10 +25,9 @@ public class Customer {
         return this.accounts.get(idx);
     }
 
-    public Account addAccount(Account acct) {
+    public void addAccount(Account acct) {
         this.accounts.add(acct);
         this.numOfAccounts++;
-        return this.accounts.get(numOfAccounts-1);
     }
 
     public Account getAccount(int idx) {
